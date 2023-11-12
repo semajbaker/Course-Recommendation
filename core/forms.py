@@ -7,3 +7,4 @@ class SubjectForm(forms.Form):
     subject3 = forms.CharField(max_length=100)
     subject4 = forms.CharField(max_length=100)
     subject5 = forms.CharField(max_length=100)
+    subject6 = forms.CharField(max_length=100)

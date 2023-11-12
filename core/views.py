@@ -11,9 +11,10 @@ def recommend_courses(request):
             subject3 = form.cleaned_data['subject3']
             subject4 = form.cleaned_data['subject4']
             subject5 = form.cleaned_data['subject5']
+            subject6 = form.cleaned_data['subject6']
 
             # Get the subjects chosen by the user
-            subjects = [subject1, subject2, subject3, subject4, subject5]
+            subjects = [subject1, subject2, subject3, subject4, subject5, subject6]
 
             # Get the courses related to the subjects
             courses = Course.objects.filter(subject__title__in=subjects).distinct()
