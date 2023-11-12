@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'core',
+    'django_bootstrap5'
 ]
 
 MIDDLEWARE = [
@@ -124,7 +125,6 @@ PROJECT_PATH = os.path.abspath(os.path.dirname(__name__))
 PROJECT_DIR = [
     os.path.join(PROJECT_PATH, 'static')
 ]
-CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
